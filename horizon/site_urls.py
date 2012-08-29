@@ -22,11 +22,15 @@ from django.conf.urls.defaults import patterns, url, include
 
 from horizon.views.auth import LoginView
 
+#Added by sunxin3 for allowing register from anonymous user
+from horizon.dashboards.syspanel.users.views import CreateView
 
 urlpatterns = patterns('horizon.views.auth',
     url(r'home/$', 'user_home', name='user_home'),
     url(r'auth/login/$', LoginView.as_view(), name='auth_login'),
     url(r'auth/logout/$', 'logout', name='auth_logout'),
+    # Added by sunxin3 for new urlpatterns for register
+    url(r'register/$',CreateView.as_view(), name='register'), 
     url(r'auth/switch/(?P<tenant_id>[^/]+)/$', 'switch_tenants',
         name='auth_switch'))
 
