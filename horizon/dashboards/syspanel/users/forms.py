@@ -56,9 +56,8 @@ class BaseUserForm(forms.SelfHandlingForm):
                 raise ValidationError(_('Passwords do not match.'))
         return data
 
-# Modified by sunxin3 for changing the inherict relationship with form
-#class CreateUserForm(BaseUserForm):
-class CreateUserForm(forms.SelfHandlingForm):
+
+class CreateUserForm(BaseUserForm):
     name = forms.CharField(label=_("User Name"))
     email = forms.EmailField(label=_("Email"))
     password = forms.RegexField(
