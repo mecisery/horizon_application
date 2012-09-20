@@ -860,7 +860,7 @@ msgstr "上传对象"
 
 #: dashboards/nova/images_and_snapshots/panel.py:25
 msgid "Images & Snapshots"
-msgstr "镜像和快照"
+msgstr "镜像与快照"
 
 #: dashboards/nova/images_and_snapshots/views.py:61
 msgid "Unable to retrieve images."
@@ -1082,7 +1082,7 @@ msgstr "无法获取实例。"
 #: dashboards/nova/images_and_snapshots/templates/images_and_snapshots/index.html:3
 #: dashboards/nova/images_and_snapshots/templates/images_and_snapshots/index.html:6
 msgid "Images &amp; Snapshots"
-msgstr "镜像&amp;快照"
+msgstr "镜像与快照"
 
 #: dashboards/nova/images_and_snapshots/templates/images_and_snapshots/images/_create.html:7
 #: dashboards/nova/images_and_snapshots/templates/images_and_snapshots/images/create.html:3
@@ -1238,6 +1238,14 @@ msgstr "创建卷"
 #: dashboards/nova/images_and_snapshots/volume_snapshots/tables.py:65
 msgid "Volume ID"
 msgstr "卷ID"
+
+#: dashboards/nova/instances_and_volumes/panel.py:24_geyg
+msgid "Instances & Volumes"
+msgstr "实例与卷"
+
+#geyg
+msgid "Instances &amp; Volumes"
+msgstr "实例与卷"
 
 #: dashboards/nova/instances/forms.py:44
 #, python-format
@@ -3825,9 +3833,34 @@ msgstr "容器创建成功"
 msgid "%s did not complete."
 msgstr ""
 
-#: dashboards/syspanel/instances/tables.py:42
+#: dashboards/syspanel/instances/tables.py:42_geyg
 msgid "Tenant"
 msgstr "租户"
 
-msgid "Instances & Volumes"
-msgstr "实例和卷"
+#geyg
+msgid "Select Language"
+msgstr "选择语言"
+
+#geyg
+msgid "Dashboard User Interface Language"
+msgstr "控制台使用界面语言"
+
+#geyg
+msgid "Language Settings"
+msgstr "语言设定"
+
+#geyg
+msgid "From here you can modify different settings for your dashboard."
+msgstr "你可以在这里修改控制台的不同设定"
+
+#geyg
+msgid "Dashboard Settings"
+msgstr "控制台设定"
+
+#geyg
+msgid "OpenStack Credentials"
+msgstr "OpenStack认证资料"
+
+#geyg
+msgid "Juju Environment Config"
+msgstr "Juju 环境配置"
