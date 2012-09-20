@@ -3828,3 +3828,6 @@ msgstr ""
 #: dashboards/syspanel/instances/tables.py:42
 msgid "Tenant"
 msgstr "租户"
+
+msgid "Instances & Volumes"
+msgstr "实例和卷"
