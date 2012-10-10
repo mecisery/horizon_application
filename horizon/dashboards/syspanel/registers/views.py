@@ -15,9 +15,9 @@ def register_page(request):
 
             keystone = client.Client(username="admin", password="123qwe", tenant_name="admin", auth_url="http://localhost:5000/v2.0")
 
-            tenant = keystone.tenants.create(tenant_name="test2", description="1ssy new tenant!", enabled=True)
+            tenant = keystone.tenants.create(tenant_name=username, description="1ssy new tenant!", enabled=True)
 
-            user= keystone.users.create(username, password, email, "e798654a2f5148bfa86bff350e64f835", enabled=True)
+            user= keystone.users.create(username, password, email, tenant.id, enabled=True)
 
             if user:
                 return HttpResponse("Register Success!")  
