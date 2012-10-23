@@ -21,7 +21,9 @@ from horizon.dashboards.nova import dashboard
 
 
 class InstancesAndVolumes(horizon.Panel):
-    name = _("Instances & Volumes")
+    #Modified by sunxin to remove volumes name
+    #name = _("Instances & Volumes")
+    name = _("Instances")
     slug = 'instances_and_volumes'
 
 
