@@ -23,6 +23,7 @@ from horizon.dashboards.settings import dashboard
 class TenantPanel(horizon.Panel):
     name = _("OpenStack Credentials")
     slug = 'project'
+    roles = ('admin',)
 
 
 dashboard.Settings.register(TenantPanel)

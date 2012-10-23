@@ -23,6 +23,7 @@ from horizon.dashboards.settings import dashboard
 class JujuPanel(horizon.Panel):
     name = _("Juju Environment Config")
     slug = 'juju'
+    roles = ('admin',)
 
 
 dashboard.Settings.register(JujuPanel)
