@@ -37,7 +37,9 @@ class ObjectStorePanels(horizon.PanelGroup):
 class Nova(horizon.Dashboard):
     name = _("Project")
     slug = "nova"
-    panels = (BasePanels, ObjectStorePanels)
+    #panels = (BasePanels, ObjectStorePanels)
+    #Modified by sunxin for deleting the swift pannel
+    panels = (BasePanels,)
     default_panel = 'overview'
     supports_tenants = True
 
